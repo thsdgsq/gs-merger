@@ -1,0 +1,6 @@
+include README.md INSTALL.md LICENSE THIRD_PARTY_NOTICES.md CITATION.cff stitch.sh requirements.txt
+recursive-include configs *.json
+recursive-include docs *.md *.json
+recursive-include examples *.py *.json
+recursive-include tests *.py
+recursive-include .github *.yml

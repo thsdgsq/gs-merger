@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gs-merger"
+version = "0.1.0"
+authors = [{name = "thsdgsq", email = "1609303328@qq.com"}]
+description = "Interactive landmark-based Sim(3) alignment and merging of standard 3DGS PLY models."
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+keywords = ["3dgs", "gaussian-splatting", "sim3", "point-cloud", "open3d"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+dependencies = ["numpy>=1.24,<2", "plyfile>=1.0,<2", "open3d>=0.18,<0.20"]
+
+[project.urls]
+Repository = "https://github.com/thsdgsq/gs-merger"
+Issues = "https://github.com/thsdgsq/gs-merger/issues"
+
+[project.optional-dependencies]
+dev = ["ruff>=0.6"]
+
+[project.scripts]
+gs-merger = "gs_merger.pipeline:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["gs_merger*"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W"]

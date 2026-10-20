@@ -1,0 +1,35 @@
+# Local environments, caches and build products
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+wheelhouse/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+.DS_Store
+.idea/
+.vscode/
+
+# Local models, checkpoints, configurations and generated outputs
+data/
+results/
+output/
+*.ply
+*.pcd
+*.pth
+*.npz
+*.npy
+*.log
+*.ssproj
+*.sog
+configs/local*.json
+.env
+.env.*
+
+# Keep the install entry when nested in a repository ignoring *.txt.
+!requirements.txt

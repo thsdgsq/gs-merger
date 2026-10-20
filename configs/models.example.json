@@ -1,0 +1,20 @@
+{
+  "models": [
+    "../data/model1.ply",
+    "../data/model2.ply",
+    "../data/model3.ply",
+    "../data/model4.ply"
+  ],
+  "output_dir": "../results/site",
+  "pairs_per_step": [10, 10, 10],
+  "control_threshold": 0.1,
+  "min_inlier_ratio": 0.8,
+  "view_max_points": 0,
+  "preview_max_points": 300000,
+  "min_opacity": 0.05,
+  "point_size": 2.0,
+  "marker_point_size": 6.0,
+  "pick_window_width": 800,
+  "pick_window_height": 700,
+  "seed": 123
+}
